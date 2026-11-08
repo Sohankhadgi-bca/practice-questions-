@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void) { long long total_seconds; printf("Enter time in seconds: "); if (scanf("%lld", &total_seconds) != 1 || total_seconds < 0) return 1; long long hours = total_seconds / 3600; long long minutes = (total_seconds % 3600) / 60; long long seconds = total_seconds % 60; printf("%lld seconds = %lld hours, %lld minutes, %lld seconds\n", total_seconds, hours, minutes, seconds); return 0; }
